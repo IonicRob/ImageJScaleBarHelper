@@ -1,5 +1,5 @@
 %% Image Scale Bar Ratio Calculator
-% By Robert J Scales
+% By Robert J Scales Feb 2021
 clc
 clear
 
@@ -40,7 +40,7 @@ if isempty(cd_StartFolderLocation)
 end
 
 cd(cd_StartFolderLocation);
-filter = '*.tif;*.png;*.bmp';
+filter = '*.tif';
 [files,path] = uigetfile(filter,'MultiSelect','on');
 filenames = string(files);
 fullfiles = string(fullfile(path,files));
